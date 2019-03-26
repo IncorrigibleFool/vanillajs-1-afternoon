@@ -207,7 +207,7 @@ function play(clickedId) {
   } else {
     playerSpan.innerText = 'X';
     clickedElement.innerText = 'O';
-    board[clickedId] = 'O';
+    board[clickedId] = '0';
   }
   console.log(board);
 }
@@ -267,7 +267,7 @@ function play(clickedId) {
   } else {
     playerSpan.innerText = 'X';
     clickedElement.innerText = 'O';
-    board[clickedId] = 'O';
+    board[clickedId] = '0';
   }
   console.log(board);
 
@@ -334,7 +334,7 @@ function play(clickedId) {
 ## Black Diamond 
 
 1. Create a function that resets the board after each game. This function should be called after the winner is revealed.
-2. Add a button that runs the reset function when it is clicked.
+2. Add a button that resets the game when clicked. 
 3. The current logic allows players to override a square that has already been played. Alter the function to remove the ability to override a square. 
 4. Alter the game so that users can not continue to play after a winner has been decided.
 
